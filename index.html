@@ -1,323 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js" >
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Laxsan Jeya</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <!-- Favicons -->
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laxsan</title>
 
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
-<body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+<body id="top">
 
-    <div class="profile-img">
-      <img src="assets/img/laxsan-profile.png" alt="" class="img-fluid rounded-circle">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <h1 class="sitename">Laxsan Jeya</h1>
-    </a>
 
-    <div class="social-links text-center">
-      <a href="https://github.com/416LJ" class="github"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/laxsanj/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About Me</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#skills"><i class="bi bi-file-earmark-code navicon"></i> Skills</a></li>
 
-        <li><a href="https://www.dropbox.com/scl/fi/5r1fm1jumexgwy4s4pp0l/Laxsan-Resume.pdf?rlkey=965kznitv30153rg6abmdy5ei&st=lk3haqob&dl=1"><i class="bi bi-download navicon"></i> Download Resume</a></li>
-      </ul>
-    </nav>
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
 
-  </header>
+             <div class="s-header__block">
+                <div class="s-header__branding">
+                    <p class="site-title">
+                        <a href="index.html" rel="home">Laxsan.</a>
+                    </p>
+                </div>
 
-  <main class="main">
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+            <div class="row s-header__nav-wrap">
 
-      <img src="assets/img/moon.jpg" alt="" data-aos="fade-in" class="">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#colophon" class="smoothscroll">Contact</a></li>
+                    </ul>
+                </nav> <!-- end s-header__nav -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Laxsan Jeya</h2>
-        <p>I'm a <span class="typed" data-typed-items="Software Engineer, Traveler, Photographer, Surfer">Designer...</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://416lj.substack.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 448 511.471"><path fill="#FF681A" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"/></svg>
+                            <span class="u-screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/in/laxsanj/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path></svg>
+                            <span class="u-screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/416LJ/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                            <span class="u-screen-reader-text">Github</span>
+                        </a>
+                    </li>
 
-    </section><!-- /Hero Section -->
+                </ul>  <!-- end s-header__social -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+            </div> <!-- end s-header__nav-wrap -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I have a passion for photography, where I specialize in capturing fleeting moments that weave compelling stories and reveal unique perspectives on the human experience and the world around us. Whether it’s the raw emotion on a stranger’s face in a bustling market, the interplay of light and shadow in an ancient ruin, or the quiet beauty of a misty mountain dawn, my lens seeks to freeze these instances in time, transforming ordinary scenes into evocative narratives. I’m also deeply enthusiastic about travel, having explored diverse destinations around the world—from vibrant street festivals in Southeast Asia to serene fjords in Scandinavia and rugged trails in the Americas—which has cultivated a profound appreciation for global cultures, breathtaking landscapes, and transformative experiences that broaden the mind and soul. These twin passions often intertwine, as I document my journeys through photography, creating a personal archive of cultural encounters and natural wonders that continue to inspire my creative and professional pursuits.</p>
-      </div><!-- End Section Title -->
+        </header> <!-- end s-header -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/laxsan-profile.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Software Engineer</h2>
-            <p class="fst-italic py-3">
-              
-            </p>
+        <!-- intro
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
             <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://416lj.github.io/">416lj.github.io</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/laxsanj/">linkedin.com/in/laxsanj</a></span></li>
-                  
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Eng. Software Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Toronto, Canada</span></li>
-                </ul>
-              </div>
+                <div class="column lg-12 s-intro__content">
+
+                    <div class="s-intro__text">
+                        <h1 class="s-intro__text-huge animate-on-load">
+                            Laxsan
+                        </h1>
+                        <h3 class="animate-on-load">Software Engineer <span>+</span> Photographer<span>+</span> Surfer</h3>
+                    </div>
+
+                    <div class="s-intro__bg"></div>
+
+                </div>
             </div>
-            <p class="py-3">
-               I enjoy working with modern technologies to design and develop efficient, user-friendly solutions. I’m always curious about emerging trends in software and continuously seek opportunities to grow my skills. I bring together creativity, technical expertise, and curiosity — whether in engineering solutions, capturing photographs, or exploring new horizons.
-            </p>
-          </div>
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- about
+        ================================================== -->
+        <section id="about" class="s-about">
+
+
+            <div class="s-about__block s-about__intro">
+
+                <div class="row">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle animate-on-load">About Me</h2>
+    
+                        <p class="attention-getter animate-on-load">
+                        I love the stories data can tell.
+
+Software Engineer based in Toronto, specializing in automation, AI/ Machine learning driven applications. I designed and implemented infrastructure provisioning, and CI/CD pipelines.
+
+I hold a Bachelor of Engineering (Honours) in Software Engineering and work daily with tools such as Python, JavaScript, Linux, Kubernetes, Azure, Jenkins, Git, SQL, IaC, and modern DevOps practices.  I enjoy solving complex infrastructure problems, collaborating in Agile teams, and exploring how AI, Machine learning and automation can make engineering organizations more efficient and resilient. 
+
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end s-about__intro -->
+
+
+            <div class="s-about__block s-about__career">
+
+                <div class="row s-about__career-header">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">Resume</h2>
+    
+                        <p class="text-huge-title">
+                        Here is my education, work experience, & some skills I've got.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row s-about__timeline" data-animate-block>
+                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Experience
+                        </h2>
+    
+                        <div class="timeline">
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Canada Revenue Agency</h3>
+                                    <h5 class="timeline__meta">Software Engineer - AI/ML</h5>
+                                    <p class="timeline__timeframe">Dec 2022 - Aug 2025</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I really enjoyed my time working at the Canada Revenue Agency. It was a great environment for learning and collaboration, and I had the chance to be part of several interesting projects that strengthened my technical and problem-solving skills. Working with such a dedicated team gave me valuable experience in adapting to new challenges and contributing to meaningful work that had a real impact.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">OpenBet</h4>
+                                    <h5 class="timeline__meta">Software Engingeer - DevOps</h5>
+                                    <p class="timeline__timeframe">Sept 2021 - Dec 2022</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I had a great experience working with a collaborative team to support the development of new software solutions. The role gave me the opportunity to improve processes, contribute to smoother operations, and help ensure that systems ran reliably. It was a rewarding environment where I learned a lot about teamwork, problem-solving, and building efficient workflows.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+    
+                    </div> <!-- end s-about__timeline-section -->
+    
+                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Education
+                        </h2>
+    
+                        <div class="timeline">
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">University of Ontario Institute of Technology</h3>
+                                    <h5 class="timeline__meta">Bachelor of Engineering: Software</h5>
+                                    <p class="timeline__timeframe">April 2021</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I really valued the five years I spent earning my bachelor’s degree in Software Engineering. It was an exciting time filled with learning, collaboration, and personal growth. I worked on a variety of projects that helped me strengthen my problem-solving skills and creativity while gaining a solid understanding of how technology can be used to solve real-world challenges. The experience also taught me the importance of teamwork, adaptability, and continuous learning.</p>
+                                </div>
+                            </div>
+    
+                           
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end s-about__timeline-section -->
+    
+                </div> <!-- end about__timeline -->
+
+                <div class="row s-about__skills" data-animate-block>
+                    <div class="column lg-12" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Skills & Expertise
+                        </h2>
+    
+                        <ul class="skill-bars">
+                            <li>
+                            <div class="progress percent95"></div>
+                            <strong>Python</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent85"></div>
+                            <strong>AI/ML</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent70"></div>
+                            <strong>Web Development</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent75"></div>
+                            <strong>Cloud Development</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent85"></div>
+                            <strong>DevOps</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent90"></div>
+                            <strong>Pandas</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent85"></div>
+                            <strong>NumPy</strong>
+                            </li>
+                            <li>
+                            <div class="progress percent75"></div>
+                            <strong>Data Science</strong>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div> <!-- end s-about__skills -->
+
+                <!-- end s-about__clients-->
+
+            </div> <!-- end s-about__career -->
+
+        </section> <!-- end s-about -->
+
+
+        <!-- # works
+        ================================================== -->
+         <!-- end s-works -->
+
+
+        <!-- # site footer
+        ================================================== -->
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__contact-header">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle">Get In Touch</h2>
+
+                    <p class="text-huge-title">
+                        Feel free to reach out if you wanna collaborate with me, or simply have a chat.
+                    </p>
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__contact-content">
+
+                <div class="column lg-5 md-6 stack-on-900 left-block">
+                    <p>
+                    Thanks for stopping by! I’m always open to connecting with new people—whether it’s to discuss exciting opportunities, share ideas, or collaborate on creative or technical projects. If something here caught your eye or you just want to say hello, I’d be happy to hear from you. You can reach me anytime by email, and feel free to download my résumé to learn more about my background and experience. Let’s connect!
+
+                    <div class="s-footer__buttons">
+                        <a href="mailto:416lj@protonmail.com" class="btn btn--primary u-fullwidth">Say Hello</a>
+                        <a href="https://www.dropbox.com/scl/fi/5r1fm1jumexgwy4s4pp0l/Laxsan-Resume.pdf?rlkey=965kznitv30153rg6abmdy5ei&st=lk3haqob&dl=1" class="btn btn--stroke u-fullwidth">Get My CV</a>
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="column lg-4 md-5 stack-on-900 right-block">
+
+                    <div class="s-footer__social">
+                        <h2 class="text-subtitle">
+                            Connect
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="https://www.linkedin.com/in/laxsanj/">LinkedIn</a></li>
+                            <li><a href="https://github.com/416LJ/">Github</a></li>
+                            <li><a href="https://416lj.substack.com/">SubStack</a></li>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div> <!-- end s-footer__contact-content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <span>© Copyright Laxsan Jeya 2025</span> 
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
         </div>
 
-      </div>
-
-    </section><!-- /About Section -->
+    </div> <!-- end photoSwipe background -->
 
 
-   
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Software Engineer and DevOps engineer with experience building AI/ML - driven applications, cloud-native services, and secure automation for large-scale government and gaming platforms. Skilled in Python, CI/CD, Kubernetes, and Azure. Adept at collaborating in Agile teams, implementing zero-trust security practices, and delivering reliable, auditable software in highly regulated environments</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Laxsan Jeya</h4>
-              <p><em>Innovative and deadline-driven Software Engineer with 5+ years of experience designing and developing user-centered software from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Toronto, Canada</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Engineering in Software Engineering</h4>
-              <h5>2016 - 2021</h5>
-              <p><em>University of Ontario Institute of Technology, Oshawa, Canada</em></p>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h4>CompTIA A+</h4>
-              <h5>2011</h5>
-            </div>
-            <div class="resume-item">
-              <h4>Python</h4>
-              <h5>2025</h5>
-            </div>
-            <div class="resume-item">
-              <h4>AI For Everyone</h4>
-              <h5>2026</h5>
-            </div><!-- Edn Resume Item -->
-
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Software Engineer</h4>
-              <h5>2022 - current</h5>
-              <p><em>Canada Revenue Agency, Ottawa, Canada </em></p>
-              <ul>
-                <li>Automate infrastructure provisioning and application deployment using tools like Kubernetes and GitOps.</li>
-                <li>Implement cloud-native security practices, such as zero-trust networking and automated security testing.</li>
-                <li>Implement and manage CI/CD pipelines, and deployment strategies to streamline application development.</li>
-                <li>Utilized DevOps practices, Scrum, Agile, and Practice Test-Driven Development (TDD) to produce robust, clear code and participate in the Software Development Lifecycle (SDLC), resulting in 23% annual cost savings.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>DevOps Engineer</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>OpenBet North America, Las Vegas, USA</em></p>
-              <ul>
-                <li>Collaborated with Agile teams to support the development and deployment of software solutions, using Jenkins and GIT for CI/CD pipelines.</li>
-                <li>Implemented and maintained automation scripts to streamline operations and enhance system reliability.</li>
-                <li>Administered Linux and Windows servers, ensuring high availability and performance of services.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up" >
-        <h2>Skills</h2>
-        <p>Tools and Technologies</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Web Development</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Automation</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Artificial Intelligence</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Data Structures & Algorithms</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Cloud Computing</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-   
-    </section>
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p><span>Last Updated 05-01-2026</span></p>
-      </div>
-      <div class="credits">
-        Designed by Laxsan Jeya</a>
-      </div>
-      <div>
-        <p></p>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
 </html>
