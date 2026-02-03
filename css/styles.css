@@ -69,15 +69,14 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root {
-    --font-1    : "Inter", sans-serif;
-    --font-2    : "Castoro", serif;
+    --font-1    : DM Sans;
+    --font-2    : DM Sans;
 
     /* monospace
     */
-    --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    --font-mono : DM Sans;
 }
 
 /* ------------------------------------------------------------------- 
