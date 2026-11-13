@@ -55,7 +55,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&text=%E7%AC%AC%E4%B8%80%E4%BA%8C%E4%B8%89%E5%B7%BB%E8%A9%B1%E7%9B%AE%E6%AC%A1%E6%96%B0%E7%AB%A0%E9%96%8B%E5%B9%95%E6%96%B9%E3%81%9D%E3%81%AE%E9%A0%83%E3%81%A4%E3%81%A5%E3%81%8F%E5%A5%A5%E4%BB%98%E5%A4%96%E4%BC%9D%E5%9B%9B%E5%85%AD%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%A8%E3%80%81%E3%82%8C%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99%E5%9F%BA%E7%9B%A4%E3%80%82%E8%B3%87%E6%96%99&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&text=%E3%82%AB%E3%82%B7%E3%83%A3%E3%83%83%E3%82%B6%E3%83%AF%E3%83%94%E3%83%89%E3%83%B3%EF%BC%81%E3%83%81&display=swap">
 
-  <link rel="stylesheet" href="css/main.css?v=6">
+  <link rel="stylesheet" href="css/main.css?v=7">
 
   <!-- References to the inline SVG defs below. Kept in the document so url(#id) resolves here. -->
   <style>
@@ -177,7 +177,7 @@
           <div class="panel art__frame">
             <canvas class="art__canvas" role="img" aria-label="Portrait of Laxsan Jeya, drawn in ink lines and halftone dots."></canvas>
             <noscript><img class="art__still" src="assets/img/portrait.png?v=3" width="900" height="900" alt="Portrait of Laxsan Jeya, drawn in ink lines and halftone dots."></noscript>
-            <span class="art__drop" aria-hidden="true">Drop the image here</span>
+            <span class="art__drop" aria-hidden="true">Drop the photo here</span>
             <output class="art__probe" data-probe aria-hidden="true"></output>
           </div>
           <span class="crop crop--tl" aria-hidden="true"></span>
@@ -189,23 +189,22 @@
         </div>
 
         <figcaption class="artnote">
-          <p class="label">Cover art</p>
-          <p class="artnote__text js-only" data-art-text aria-live="polite">The lines are traced from a photo of me. The dots are a small neural network working out the shading, live in your browser.</p>
-          <p class="artnote__how fineprint js-only" data-art-how>What it learns: for any spot on the page, how dark the dot there should be. It memorises this one picture. It does not recognise what is in it.</p>
-          <p class="artnote__text nojs-only">The lines are traced from a photo of me. With JavaScript switched on, a small neural network works out the shading here, live in the browser.</p>
-          <dl class="readout js-only">
-            <div><dt>Step</dt><dd data-step>0000</dd></div>
-            <div><dt>Loss</dt><dd data-loss>0.000</dd></div>
-            <div><dt>Weights</dt><dd data-weights>0</dd></div>
+          <p class="label">Try it: face detection</p>
+          <p class="artnote__text js-only" data-art-text aria-live="polite">This frame is also a face detector. Give it a photo and a neural network will mark every face it finds.</p>
+          <p class="artnote__how fineprint js-only" data-art-how>It runs in your browser and your photo is not uploaded. The portrait above is traced from a photo of me.</p>
+          <p class="artnote__text nojs-only">The portrait is traced from a photo of me. With JavaScript switched on, this frame is also a face detector: give it a photo and it marks every face it finds.</p>
+          <dl class="readout js-only" data-art-result hidden>
+            <div><dt>Faces</dt><dd data-faces>0</dd></div>
+            <div><dt>Top score</dt><dd data-score>n/a</dd></div>
+            <div><dt>Took</dt><dd data-time>0 ms</dd></div>
           </dl>
           <div class="artnote__actions js-only">
             <!-- The chosen file is read in the page only. Nothing is uploaded. -->
             <input class="artnote__file" type="file" id="art-file" accept="image/*" data-art-file>
-            <label class="btn btn--small btn--primary" for="art-file" data-art-file-label>Use your own image</label>
+            <label class="btn btn--small btn--primary" for="art-file" data-art-file-label>Find faces in your photo</label>
+            <button type="button" class="btn btn--small" data-art-sample>Try a sample photo</button>
             <button type="button" class="btn btn--small" data-art-reset hidden>Back to the portrait</button>
-            <button type="button" class="btn btn--small" data-art-initials>Draw the initials</button>
             <button type="button" class="btn btn--small" data-art-save hidden>Save PNG</button>
-            <button type="button" class="btn btn--small" data-retrain>Retrain</button>
           </div>
         </figcaption>
       </figure>
@@ -888,8 +887,8 @@
         <div><dt>Edition</dt><dd>Volume 01, first edition, 2026</dd></div>
         <div><dt>Type</dt><dd>Noto Serif Display, M PLUS 1, Shippori Mincho B1</dd></div>
         <div><dt>Made with</dt><dd>Plain HTML, CSS and JavaScript. No framework, no build step, no tracking.</dd></div>
-        <div><dt>Face detection</dt><dd>BlazeFace, run with MediaPipe, both by Google. Loaded only if you give the cover an image.</dd></div>
-        <div><dt>Demos</dt><dd>The cover network, the index search and the key audit are written for this site and run in your browser.</dd></div>
+        <div><dt>Face detection</dt><dd>BlazeFace, run with MediaPipe, both by Google. Loaded only if you give the cover a photo. Sample photo: Eileen Collins, NASA, public domain.</dd></div>
+        <div><dt>Demos</dt><dd>The index search and the key audit are written for this site. Everything runs in your browser.</dd></div>
       </dl>
 
       <p class="colophon__copy">© 2026 Laxsan Jeya</p>
@@ -897,13 +896,11 @@
 
   </main>
 
-  <script defer src="js/field-net.js?v=2"></script>
-  <script defer src="js/field-trainer.js?v=3"></script>
   <script defer src="js/hnsw.js?v=1"></script>
-  <script defer src="js/main.js?v=3"></script>
+  <script defer src="js/main.js?v=4"></script>
   <script defer src="js/portrait-data.js?v=3"></script>
-  <script defer src="js/face-finder.js?v=1"></script>
-  <script defer src="js/cover-art.js?v=4"></script>
+  <script defer src="js/face-finder.js?v=2"></script>
+  <script defer src="js/cover-art.js?v=5"></script>
   <script defer src="js/index-demo.js?v=1"></script>
   <script defer src="js/audit-demo.js?v=1"></script>
 </body>

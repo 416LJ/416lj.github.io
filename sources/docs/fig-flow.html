@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where things run</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wdth,wght@62.5..100,700..900&family=M+PLUS+1:wght@400..800&family=M+PLUS+1+Code:wght@400..700&display=block"><link rel="stylesheet" href="fig.css">
+<style>.cols{display:grid;grid-template-columns:1fr 1.6fr;gap:22px}.col{display:grid;gap:10px;align-content:start}.col__title{font:700 12px/1.2 'M PLUS 1 Code',monospace;letter-spacing:.12em;text-transform:uppercase;padding-bottom:9px;border-bottom:3px solid var(--ink)}.col--lazy .col__title{border-bottom:2px dashed var(--blue);color:var(--blue)}.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.kb{font:700 11px/1 'M PLUS 1 Code',monospace;letter-spacing:.08em;margin-top:2px}</style>
+</head>
+<body>
+<div class="fig">
+<p class="fig__head"><b>Fig. 2</b> What loads, and when. Everything runs inside the visitor&#39;s browser</p>
+<div class="cols">
+<div class="col"><p class="col__title">With the page</p>
+<div class="box"><p class="box__name">cover-art.js</p><p class="box__what">The frame and its controls</p><p class="box__note">Prints the portrait or a photo as halftone. Draws the scan line and the face brackets.</p><p class="kb">28 KB</p></div>
+<div class="box"><p class="box__name">face-finder.js</p><p class="box__what">One function: findFaces</p><p class="box__note">Small wrapper. Fetches nothing until it is called.</p><p class="kb">5 KB</p></div></div>
+<div class="col col--lazy"><p class="col__title">Only when a photo is added</p>
+<div class="pair">
+<div class="box box--pencil"><p class="box__name">MediaPipe</p><p class="box__what">Runtime, by Google</p><p class="box__note">A TensorFlow Lite interpreter compiled to WebAssembly. From a CDN, version pinned.</p><p class="kb">About 2 MB over the wire</p></div>
+<div class="box box--pencil"><p class="box__name">BlazeFace</p><p class="box__what">Model, by Google</p><p class="box__note">A pretrained face detector. Served by this site, inside face-model-data.js.</p><p class="kb">230 KB</p></div>
+</div>
+<div class="box box--pencil"><p class="box__name">sample-photo.js</p><p class="box__what">Only if the sample button is pressed</p><p class="box__note">A public-domain NASA portrait, so the demo can be tried without a photo of your own.</p><p class="kb">54 KB</p></div></div>
+</div></div>
+</body>
+</html>

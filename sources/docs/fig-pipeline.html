@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>From photo to brackets</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wdth,wght@62.5..100,700..900&family=M+PLUS+1:wght@400..800&family=M+PLUS+1+Code:wght@400..700&display=block"><link rel="stylesheet" href="fig.css">
+<style>.row{grid-template-columns:1fr 20px 1fr 20px 1.15fr 20px 1.15fr 20px 1fr 20px 1fr;align-items:stretch}.box__name{font-size:22px}.where{margin-top:16px;display:grid;grid-template-columns:2.15fr 2.4fr 2.1fr;gap:14px;font:600 11px/1.3 'M PLUS 1 Code',monospace;letter-spacing:.08em;text-transform:uppercase}.where span{padding-top:8px;border-top:3px solid var(--ink)}.where .g{border-top:2px dashed var(--blue);color:var(--blue)}</style>
+</head>
+<body>
+<div class="fig">
+<p class="fig__head"><b>Fig. 3</b> From a photo to brackets on the print</p>
+<div class="row">
+<div class="box"><p class="box__name">Read</p><p class="box__what">The file, in the page</p><p class="box__note">Decoded in memory. Not uploaded.</p></div><i class="arrow"></i>
+<div class="box"><p class="box__name">Shrink</p><p class="box__what">640 px at most</p><p class="box__note">A working copy. The original is let go.</p></div><i class="arrow"></i>
+<div class="box box--pencil"><p class="box__name">Five views</p><p class="box__what">Whole, then four quarters</p><p class="box__note">So a small face is not shrunk away.</p></div><i class="arrow arrow--blue"></i>
+<div class="box box--pencil"><p class="box__name">BlazeFace</p><p class="box__what">Each view, at 128 by 128</p><p class="box__note">One pass gives boxes and a score for each.</p></div><i class="arrow arrow--blue"></i>
+<div class="box"><p class="box__name">Merge</p><p class="box__what">One box per face</p><p class="box__note">A face seen twice is kept at its best score.</p></div><i class="arrow"></i>
+<div class="box box--ink"><p class="box__name">Mark</p><p class="box__what">Bracket and score</p><p class="box__note">Drawn over the halftone print.</p></div>
+</div>
+<div class="where"><span>Site code: cover-art.js</span><span class="g">Google: BlazeFace model, MediaPipe runtime, called from face-finder.js</span><span>Site code: face-finder.js, cover-art.js</span></div>
+</div>
+</body>
+</html>

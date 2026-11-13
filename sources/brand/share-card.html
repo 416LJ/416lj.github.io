@@ -120,10 +120,8 @@
     }
   </style>
 
-  <!-- Train on the main thread, so the capture waits for the artwork to finish. -->
   <script>
     document.documentElement.classList.add('js');
-    window.Worker = undefined;
   </script>
 </head>
 
@@ -171,8 +169,6 @@
     </figure>
   </div>
 
-  <script src="../../js/field-net.js"></script>
-  <script src="../../js/field-trainer.js"></script>
   <script src="../../js/main.js"></script>
   <script src="../../js/portrait-data.js"></script>
   <script src="../../js/cover-art.js"></script>

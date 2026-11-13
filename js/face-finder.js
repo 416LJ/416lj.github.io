@@ -1,11 +1,9 @@
 /* face-finder.js
  * Finds faces in a picture, in the page. Nothing is uploaded.
  *
- * This is a different kind of model from the one in field-net.js. That one
- * starts from nothing and memorises a single picture. This one, BlazeFace, was
- * trained ahead of time by Google on a great many photographs, and can say
- * where the faces are in a picture it has never seen. It is run here with the
- * MediaPipe runtime.
+ * The model is BlazeFace, a small neural network trained ahead of time by
+ * Google on a great many photographs. It can say where the faces are in a
+ * picture it has never seen. It is run here with the MediaPipe runtime.
  *
  *   LJ.findFaces(canvas) -> Promise of [{ x, y, w, h, score }, ...]
  *

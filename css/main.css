@@ -795,7 +795,7 @@ html:not(.js) .cover__name {
   object-position: 50% 30%;
 }
 
-/* Readout that follows the pointer: what the network predicts at that spot. */
+/* Readout that follows the pointer: how much ink is printed at that spot. */
 .art__probe {
   position: absolute;
   z-index: 4;
@@ -965,6 +965,11 @@ html:not(.js) .cover__name {
   display: flex;
   gap: clamp(12px, 1.6vw, 22px);
   font-family: var(--ff-mono);
+}
+
+/* Shown only once the detector has answered. */
+.readout[hidden] {
+  display: none;
 }
 
 .readout dt {
