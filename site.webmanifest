@@ -1,1 +1,21 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+  "name": "Laxsan Jeya",
+  "short_name": "Laxsan Jeya",
+  "description": "Software engineer in Toronto. Machine-learning systems, and the pipelines and infrastructure that keep them running in production.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#100f0d",
+  "theme_color": "#100f0d",
+  "icons": [
+    {
+      "src": "assets/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
