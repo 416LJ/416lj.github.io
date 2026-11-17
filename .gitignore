@@ -1,0 +1,5 @@
+# Everything committed to this folder is published by the host.
+# Working files stay out: originals, source artwork, the photo used for the portrait.
+sources/
+.tmp/
+.DS_Store
