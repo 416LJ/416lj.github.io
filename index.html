@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,55 +13,32 @@
   <meta property="og:url" content="https://416lj.github.io/">
   <meta property="og:title" content="Laxsan Jeya | Software Engineer, Machine Learning Systems">
   <meta property="og:description" content="Machine-learning systems, and the pipelines and infrastructure that keep them running in production.">
-  <meta property="og:image" content="https://416lj.github.io/assets/og/og-image.png?v=4">
+  <meta property="og:image" content="https://416lj.github.io/assets/og/og-image.png?v=6">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Laxsan Jeya, software engineer. A halftone portrait in front of a red disc, beside the name.">
+  <meta property="og:image:alt" content="Laxsan Jeya, software engineer, beside an illustrated portrait.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Laxsan Jeya | Software Engineer, Machine Learning Systems">
   <meta name="twitter:description" content="Machine-learning systems, and the pipelines and infrastructure that keep them running in production.">
-  <meta name="twitter:image" content="https://416lj.github.io/assets/og/twitter-image.png?v=4">
+  <meta name="twitter:image" content="https://416lj.github.io/assets/og/twitter-image.png?v=6">
 
-  <meta name="theme-color" content="#100f0d">
-  <link rel="icon" href="assets/favicon/favicon.ico?v=1" sizes="32x32">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?v=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon/favicon.ico?v=2" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?v=2">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Runs before first paint: flags JS as available and restores the chosen edition.
-       The night edition is the default. Day is used only if the reader picked it. -->
   <script>
-    (function () {
-      var d = document.documentElement;
-      d.classList.add('js');
-      try {
-        if (localStorage.getItem('lj-edition') === 'day') {
-          d.setAttribute('data-theme', 'light');
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f4efe4');
-        }
-      } catch (err) {}
-    })();
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Display face: blocks briefly instead of flashing a fallback, because the fallback is far wider. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wdth,wght@62.5..100,700..900&display=block">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400..800&family=M+PLUS+1+Code:wght@400..700&display=swap">
-  <!-- Japanese faces are requested with only the glyphs this page uses.
-       If you add or change Japanese text, add its characters to the text= list. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&text=%E7%AC%AC%E4%B8%80%E4%BA%8C%E4%B8%89%E5%B7%BB%E8%A9%B1%E7%9B%AE%E6%AC%A1%E6%96%B0%E7%AB%A0%E9%96%8B%E5%B9%95%E6%96%B9%E3%81%9D%E3%81%AE%E9%A0%83%E3%81%A4%E3%81%A5%E3%81%8F%E5%A5%A5%E4%BB%98%E5%A4%96%E4%BC%9D%E5%9B%9B%E5%85%AD%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%A8%E3%80%81%E3%82%8C%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99%E5%9F%BA%E7%9B%A4%E3%80%82%E8%B3%87%E6%96%99&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&text=%E3%82%AB%E3%82%B7%E3%83%A3%E3%83%83%E3%82%B6%E3%83%AF%E3%83%94%E3%83%89%E3%83%B3%EF%BC%81%E3%83%81&display=swap">
-
-  <link rel="stylesheet" href="css/main.css?v=7">
-
-  <!-- References to the inline SVG defs below. Kept in the document so url(#id) resolves here. -->
-  <style>
-    .sfx { filter: url(#ink-rough); }
-    .seal { filter: url(#ink-rough-fine); }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css?v=8">
 
   <script type="application/ld+json">
   {
@@ -80,54 +57,18 @@
   }
   </script>
 </head>
-
 <body>
-  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Shared SVG definitions: screentone patterns and the ink-wobble filters. -->
-  <svg class="defs" aria-hidden="true" focusable="false">
-    <defs>
-      <pattern id="tone-light" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-        <circle cx="2.5" cy="2.5" r="0.95" class="f-ink"/>
-      </pattern>
-      <pattern id="tone-mid" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-        <circle cx="2.5" cy="2.5" r="1.55" class="f-ink"/>
-      </pattern>
-      <pattern id="tone-dark" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-        <circle cx="2.5" cy="2.5" r="2.15" class="f-ink"/>
-      </pattern>
-      <filter id="ink-rough" x="-8%" y="-8%" width="116%" height="116%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="2" seed="7" result="noise"/>
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-      <filter id="ink-rough-fine" x="-8%" y="-8%" width="116%" height="116%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="2" seed="3" result="noise"/>
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-    </defs>
-  </svg>
+  <a class="skip" href="#main">Skip to the content</a>
 
-  <!-- Running head. In a manga magazine this margin text is the hashira. -->
-  <header class="hashira">
-    <a class="hashira__mark" href="#cover" aria-label="Laxsan Jeya, back to the cover">
-      <span class="hashira__seal" aria-hidden="true"></span>Laxsan Jeya
-    </a>
-    <p class="hashira__where" aria-hidden="true">
-      <span>Vol. 01</span>
-      <span class="hashira__title" data-running-title>Cover</span>
-    </p>
-    <nav class="hashira__nav" aria-label="Sections">
-      <a href="#contents">Contents</a>
-      <a href="#ch-01">Work</a>
+  <header class="bar">
+    <a class="bar__mark" href="#cover" aria-label="Laxsan Jeya, back to the top">Laxsan Jeya</a>
+    <nav class="bar__nav" aria-label="Sections">
+      <a href="#work">Work</a>
       <a href="#skills">Skills</a>
-      <a href="#colophon">Contact</a>
-      <a class="hashira__cv" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé</a>
+      <a href="#contact">Contact</a>
+      <a class="bar__cv" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé</a>
     </nav>
-    <button class="edition" type="button" id="edition-toggle" aria-pressed="true">
-      <span class="edition__icon" aria-hidden="true"></span>
-      <span class="edition__text" data-edition-text>Day edition</span>
-    </button>
-    <span class="hashira__progress" aria-hidden="true"></span>
   </header>
 
   <main id="main">
@@ -135,773 +76,332 @@
     <!-- ============================================================
          COVER
          ============================================================ -->
-    <section id="cover" class="cover" data-title="Cover" aria-labelledby="cover-name">
+    <section id="cover" class="band" aria-labelledby="cover-name">
+      <div class="band__inner cover">
 
-      <p class="cover__mast">
-        <span>Vol. 01</span>
-        <span lang="ja" aria-hidden="true" class="cover__mast-jp">第一巻</span>
-        <span>2026 edition</span>
-        <span class="cover__mast-end">Toronto, Canada</span>
-      </p>
-
-      <div class="cover__lead">
-        <div class="cover__title">
-          <h1 id="cover-name" class="cover__name">
-            <span class="cover__name-line">Laxsan</span>
-            <span class="cover__name-line">Jeya</span>
-          </h1>
-          <p class="cover__role">
+        <div class="cover__lead">
+          <p class="kicker">
             <span>Software engineer</span>
             <span>ML, AI and infrastructure</span>
+            <span>Toronto, Canada</span>
           </p>
-        </div>
 
-        <div class="cover__intro">
+          <div class="cover__title">
+            <h1 id="cover-name" class="name">
+              <span class="name__line">Laxsan</span>
+              <span class="name__line name__line--outline">Jeya</span>
+            </h1>
+          </div>
+
           <p class="cover__lede">I build machine-learning systems, and the pipelines and infrastructure that keep them running in production.</p>
           <p class="cover__open">Open to software engineering roles, from ML and AI to DevOps and solutions architecture.</p>
+
+          <ul class="links">
+            <li><a class="btn btn--solid" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé (PDF)</a></li>
+            <li><a class="btn" href="https://github.com/416LJ/" rel="me">GitHub</a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/laxsanj/" rel="me">LinkedIn</a></li>
+          </ul>
         </div>
 
-        <ul class="cover__links">
-          <li><a class="btn btn--primary" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé (PDF)</a></li>
-          <li><a class="btn" href="https://github.com/416LJ/" rel="me">GitHub</a></li>
-          <li><a class="btn" href="https://www.linkedin.com/in/laxsanj/" rel="me">LinkedIn</a></li>
-        </ul>
+        <div class="cover__views">
+
+          <!-- The globe. A photo of the Earth by day and by night (NASA, public
+               domain), wrapped round a ball in the page. Until the photo
+               arrives, and wherever it cannot be shown, the globe is drawn in
+               lines from public-domain map data. -->
+          <figure class="globe" data-globe data-photo-script="js/globe-photo-data.js?v=1">
+            <header class="panel__head">Where I have worked</header>
+
+            <div class="globe__stage js-only">
+              <canvas class="globe__photo" aria-hidden="true"></canvas>
+              <canvas class="globe__canvas" tabindex="0" role="img" aria-label="A turning globe with markers at Toronto, Ottawa and Las Vegas. Drag it, or use the arrow keys, to turn it."></canvas>
+            </div>
+
+            <figcaption class="globe__note">
+              <!-- Each place is a link to the job done there. With scripts on, the
+                   globe turns to the place first, then the page moves to the job. -->
+              <ul class="places">
+                <li><a class="place" href="#work" data-place="toronto"><b>Toronto</b><span>Home. Plandaro, remote, 2026 to present</span><i>See the work</i></a></li>
+                <li><a class="place" href="#work-canada" data-place="ottawa"><b>Ottawa</b><span>Government of Canada, 2022 to 2025</span><i>See the work</i></a></li>
+                <li><a class="place" href="#work-openbet" data-place="vegas"><b>Las Vegas</b><span>OpenBet, 2021 to 2022</span><i>See the work</i></a></li>
+              </ul>
+              <p class="fine js-only">Pick a place, or a pin on the globe, to see the work done there. Drag the globe to turn it. Day and night follow the real time<span data-globe-clock></span>.</p>
+            </figcaption>
+          </figure>
+
+          <!-- The face detector. A photo given to it is read in the page only.
+               Nothing is uploaded. -->
+          <figure class="detail" id="detector" data-detector data-sample-script="js/sample-photo.js?v=1">
+            <header class="panel__head">Try it: face detection</header>
+
+            <div class="scope" data-scope>
+              <span class="scope__state js-only" data-state>Idle</span>
+              <canvas class="scope__canvas" role="img" aria-label="Portrait of Laxsan Jeya, drawn in the style of a video game cover."></canvas>
+              <noscript><img class="scope__still" src="assets/img/portrait.jpg?v=2" width="800" height="1000" alt="Portrait of Laxsan Jeya, drawn in the style of a video game cover."></noscript>
+              <div class="scope__marks" data-marks aria-hidden="true"></div>
+              <span class="scope__scan" aria-hidden="true"></span>
+              <span class="scope__drop" aria-hidden="true">Drop the photo here</span>
+            </div>
+
+            <figcaption class="detail__note">
+              <p class="detail__text js-only" data-text aria-live="polite">This frame is a face detector. Give it a photo and a neural network will mark every face it finds.</p>
+              <p class="fine js-only" data-how>It runs in your browser and your photo is not uploaded. It finds faces. It does not recognise who anyone is.</p>
+              <p class="detail__text nojs-only">With JavaScript switched on, this frame is a face detector: give it a photo and it marks every face it finds.</p>
+
+              <dl class="readout js-only" data-result hidden>
+                <div><dt>Faces</dt><dd data-faces>0</dd></div>
+                <div><dt>Top score</dt><dd data-score>n/a</dd></div>
+                <div><dt>Took</dt><dd data-time>0 ms</dd></div>
+              </dl>
+
+              <div class="actions js-only">
+                <input class="actions__file" type="file" id="detector-file" accept="image/*" data-file>
+                <label class="btn btn--signal" for="detector-file">Find faces in your photo</label>
+                <button type="button" class="btn" data-sample>Try a sample photo</button>
+                <button type="button" class="btn" data-reset hidden>Back to the portrait</button>
+              </div>
+            </figcaption>
+          </figure>
+
+        </div>
       </div>
-
-      <!-- The portrait is made from a photo by execution/mangafy_portrait.py:
-           the ink and the cut-out figure as images, the tone as data in js/portrait-data.js. -->
-      <figure class="cover__art" data-cover-art
-              data-portrait-ink="assets/img/portrait-ink.png?v=3"
-              data-portrait-figure="assets/img/portrait-figure.png?v=3">
-        <div class="art">
-          <div class="panel art__frame">
-            <canvas class="art__canvas" role="img" aria-label="Portrait of Laxsan Jeya, drawn in ink lines and halftone dots."></canvas>
-            <noscript><img class="art__still" src="assets/img/portrait.png?v=3" width="900" height="900" alt="Portrait of Laxsan Jeya, drawn in ink lines and halftone dots."></noscript>
-            <span class="art__drop" aria-hidden="true">Drop the photo here</span>
-            <output class="art__probe" data-probe aria-hidden="true"></output>
-          </div>
-          <span class="crop crop--tl" aria-hidden="true"></span>
-          <span class="crop crop--tr" aria-hidden="true"></span>
-          <span class="crop crop--bl" aria-hidden="true"></span>
-          <span class="crop crop--br" aria-hidden="true"></span>
-          <p class="burst" aria-hidden="true"><span lang="ja">新章開幕</span><span>New chapter</span></p>
-          <p class="cover__tategaki" lang="ja" aria-hidden="true">機械学習と、それを動かす基盤。</p>
-        </div>
-
-        <figcaption class="artnote">
-          <p class="label">Try it: face detection</p>
-          <p class="artnote__text js-only" data-art-text aria-live="polite">This frame is also a face detector. Give it a photo and a neural network will mark every face it finds.</p>
-          <p class="artnote__how fineprint js-only" data-art-how>It runs in your browser and your photo is not uploaded. The portrait above is traced from a photo of me.</p>
-          <p class="artnote__text nojs-only">The portrait is traced from a photo of me. With JavaScript switched on, this frame is also a face detector: give it a photo and it marks every face it finds.</p>
-          <dl class="readout js-only" data-art-result hidden>
-            <div><dt>Faces</dt><dd data-faces>0</dd></div>
-            <div><dt>Top score</dt><dd data-score>n/a</dd></div>
-            <div><dt>Took</dt><dd data-time>0 ms</dd></div>
-          </dl>
-          <div class="artnote__actions js-only">
-            <!-- The chosen file is read in the page only. Nothing is uploaded. -->
-            <input class="artnote__file" type="file" id="art-file" accept="image/*" data-art-file>
-            <label class="btn btn--small btn--primary" for="art-file" data-art-file-label>Find faces in your photo</label>
-            <button type="button" class="btn btn--small" data-art-sample>Try a sample photo</button>
-            <button type="button" class="btn btn--small" data-art-reset hidden>Back to the portrait</button>
-            <button type="button" class="btn btn--small" data-art-save hidden>Save PNG</button>
-          </div>
-        </figcaption>
-      </figure>
-
-      <a class="cover__next" href="#contents">
-        <span>Turn the page</span>
-        <span class="cover__next-arrow" aria-hidden="true"></span>
-      </a>
     </section>
 
     <!-- ============================================================
-         CONTENTS
+         WORK 01 : PLANDARO
          ============================================================ -->
-    <section id="contents" class="contents" data-title="Contents" aria-labelledby="contents-title">
+    <article id="work" class="band band--light" aria-labelledby="work-title">
+      <div class="band__inner job">
 
-      <div class="panel panel--ink contents__card" data-reveal="wipe-down">
-        <p class="contents__jp" lang="ja" aria-hidden="true">目次</p>
-        <h2 id="contents-title" class="contents__title">Contents</h2>
-        <p class="contents__note">Three jobs, newest first, then skills and education. Each job opens on its main project.</p>
-      </div>
-
-      <!-- Each row leads with the plain facts: employer, role, dates.
-           The chapter title follows as a one-line hook for that job's main project. -->
-      <ol class="toc">
-        <li class="toc__row" data-reveal="wipe-right" style="--i: 0">
-          <a class="toc__link" href="#ch-01">
-            <span class="toc__num">01</span>
-            <span class="toc__body">
-              <span class="toc__title">Plandaro</span>
-              <span class="toc__meta">Software Engineer, Full Stack. April 2026 to present.</span>
-              <span class="toc__episode"><b>A Face in the Crowd</b> Finding one person in thousands of event photos.</span>
-            </span>
-            <span class="toc__go" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li class="toc__row" data-reveal="wipe-right" style="--i: 1">
-          <a class="toc__link" href="#ch-02">
-            <span class="toc__num">02</span>
-            <span class="toc__body">
-              <span class="toc__title">Government of Canada</span>
-              <span class="toc__meta">Software Engineer. December 2022 to December 2025.</span>
-              <span class="toc__episode"><b>The Estimator</b> A model that estimates taxable automobile benefits, built for the Canada Revenue Agency.</span>
-            </span>
-            <span class="toc__go" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li class="toc__row" data-reveal="wipe-right" style="--i: 2">
-          <a class="toc__link" href="#ch-03">
-            <span class="toc__num">03</span>
-            <span class="toc__body">
-              <span class="toc__title">OpenBet</span>
-              <span class="toc__meta">DevOps Engineer. September 2021 to December 2022.</span>
-              <span class="toc__episode"><b>Keys to the House</b> Clearing out SSH keys automatically when people leave.</span>
-            </span>
-            <span class="toc__go" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li class="toc__row" data-reveal="wipe-right" style="--i: 3">
-          <a class="toc__link" href="#skills">
-            <span class="toc__num">04</span>
-            <span class="toc__body">
-              <span class="toc__title">Skills and Education</span>
-              <span class="toc__meta">Tools and languages, degree, and certification.</span>
-            </span>
-            <span class="toc__go" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li class="toc__row" data-reveal="wipe-right" style="--i: 4">
-          <a class="toc__link" href="#colophon">
-            <span class="toc__num">05</span>
-            <span class="toc__body">
-              <span class="toc__title">Contact</span>
-              <span class="toc__meta">Résumé, LinkedIn and GitHub.</span>
-            </span>
-            <span class="toc__go" aria-hidden="true"></span>
-          </a>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ============================================================
-         CHAPTER 01 : PLANDARO
-         ============================================================ -->
-    <article id="ch-01" class="chapter" data-title="01 Plandaro" aria-labelledby="ch-01-title">
-
-      <!-- Opening spread: title card + establishing panel -->
-      <div class="spread spread--open">
-
-        <header class="panel panel--ink titlecard" data-reveal="wipe-down">
-          <p class="titlecard__kicker">
-            <span>Chapter 01 / Plandaro</span>
-            <span lang="ja" aria-hidden="true" class="titlecard__jp">第一話</span>
-          </p>
-          <p class="titlecard__num" aria-hidden="true">01</p>
-          <h2 id="ch-01-title" class="titlecard__title">A Face in the Crowd</h2>
-          <dl class="titlecard__meta">
-            <div><dt>Company</dt><dd>Plandaro</dd></div>
+        <header class="job__head">
+          <div class="job__title">
+            <p class="kicker"><span>Work</span><span>01 of 03</span></p>
+            <h2 id="work-title" class="job__name">Plandaro</h2>
+            <p class="job__hook">Finding one person in thousands of event photos.</p>
+          </div>
+          <dl class="spec">
             <div><dt>Role</dt><dd>Software Engineer, Full Stack</dd></div>
             <div><dt>When</dt><dd>April 2026 to present</dd></div>
             <div><dt>Where</dt><dd>Remote</dd></div>
           </dl>
         </header>
 
-        <div class="panel crowd" data-reveal="wipe-right">
-          <svg class="crowd__svg" data-crowd viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"></svg>
-          <span class="sfx sfx--zawa" lang="ja" aria-hidden="true">ザワ<br>ザワ</span>
-          <p class="caption crowd__c1">One event.</p>
-          <p class="caption crowd__c2">Thousands of photos.</p>
-          <p class="caption caption--ink crowd__c3">Somewhere in there, every photo of you.</p>
-        </div>
-      </div>
-
-      <!-- The pipeline, as a four-panel strip -->
-      <section class="pipeline" aria-labelledby="pipeline-title">
-        <h3 id="pipeline-title" class="label label--rule">How a photo becomes a match</h3>
-
-        <ol class="strip">
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 0">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <path class="i-hair" d="M10 24h40M22 38h26M6 58h34M30 76h22"/>
-                <g transform="translate(60 12) rotate(-11)">
-                  <rect class="i-card" width="60" height="44"/>
-                  <rect x="7" y="7" width="46" height="24" fill="url(#tone-light)"/>
-                </g>
-                <g transform="translate(104 38) rotate(7)">
-                  <rect class="i-card" width="60" height="44"/>
-                  <rect x="7" y="7" width="46" height="24" fill="url(#tone-mid)"/>
-                </g>
-                <g transform="translate(146 66) rotate(-5)">
-                  <rect class="i-card" width="60" height="44"/>
-                  <rect x="7" y="7" width="46" height="24" fill="url(#tone-dark)"/>
-                </g>
-                <path class="i-line" d="M14 138h212"/>
-                <rect class="i-card" x="20" y="118" width="26" height="20"/>
-                <rect class="i-card" x="52" y="118" width="26" height="20"/>
-                <rect class="i-card" x="84" y="118" width="26" height="20"/>
-                <rect x="20" y="118" width="26" height="20" fill="url(#tone-dark)"/>
-                <rect x="52" y="118" width="26" height="20" fill="url(#tone-mid)"/>
-                <rect x="84" y="118" width="26" height="20" fill="url(#tone-light)"/>
-                <rect class="i-pencil" x="116" y="118" width="26" height="20"/>
-                <path class="i-line" d="M160 128h54M202 120l12 8-12 8"/>
-              </svg>
-              <span class="sfx sfx--kasha" lang="ja" aria-hidden="true">カシャッ</span>
-              <p class="strip__n" aria-hidden="true">1</p>
-              <h4 class="strip__title">Ingest</h4>
-              <p class="strip__text">Bulk uploads go straight onto a queue. Celery workers take it from there, so the API never blocks and requests never time out.</p>
-            </div>
-          </li>
-
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 1">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <rect class="i-pencil" x="34" y="12" width="172" height="126"/>
-                <path class="i-line" d="M42 20l30 22M72 42l-12-1M72 42l-3-12"/>
-                <path class="i-line" d="M198 20l-30 22M168 42l12-1M168 42l3-12"/>
-                <path class="i-line" d="M42 130l30-22M72 108l-12 1M72 108l-3 12"/>
-                <path class="i-line" d="M198 130l-30-22M168 108l12 1M168 108l3 12"/>
-                <rect class="i-card" x="84" y="48" width="72" height="54"/>
-                <rect x="92" y="56" width="56" height="30" fill="url(#tone-mid)"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">2</p>
-              <h4 class="strip__title">Compress</h4>
-              <p class="strip__text">Every photo is compressed in the background, automatically.</p>
-            </div>
-          </li>
-
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 2">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <rect class="i-card" x="10" y="26" width="116" height="92"/>
-                <circle class="i-card" cx="38" cy="66" r="10"/>
-                <path class="i-card" d="M20 118c0-20 8-28 18-28s18 8 18 28z"/>
-                <circle class="i-card" cx="70" cy="58" r="12"/>
-                <path class="i-card" d="M48 118c0-26 10-34 22-34s22 8 22 34z" fill="url(#tone-light)"/>
-                <circle class="i-card" cx="102" cy="68" r="9"/>
-                <path class="i-card" d="M86 118c0-18 7-26 16-26s16 8 16 26z"/>
-                <path class="i-signal" d="M54 50v-8h8M86 50v-8h-8M54 68v8h8M86 68v8h-8"/>
-                <path class="i-signal" d="M86 46h62v-18h20"/>
-                <circle class="i-signal-dot" cx="86" cy="46" r="2.4"/>
-                <path class="i-line" d="M180 16h-8v118h8M214 16h8v118h-8"/>
-                <rect class="f-ink" x="182" y="22" width="30" height="9" opacity=".12"/>
-                <rect class="f-ink" x="182" y="33" width="30" height="9" opacity=".78"/>
-                <rect class="f-ink" x="182" y="44" width="30" height="9" opacity=".34"/>
-                <rect class="f-ink" x="182" y="55" width="30" height="9" opacity=".95"/>
-                <rect class="f-ink" x="182" y="66" width="30" height="9" opacity=".22"/>
-                <rect class="f-ink" x="182" y="77" width="30" height="9" opacity=".6"/>
-                <rect class="f-ink" x="182" y="88" width="30" height="9" opacity=".08"/>
-                <rect class="f-ink" x="182" y="99" width="30" height="9" opacity=".86"/>
-                <rect class="f-ink" x="182" y="110" width="30" height="9" opacity=".44"/>
-                <rect class="f-ink" x="182" y="121" width="30" height="9" opacity=".68"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">3</p>
-              <h4 class="strip__title">Embed</h4>
-              <p class="strip__text">InsightFace turns each face it finds into an embedding: a vector that lands close to other photos of the same person.</p>
-            </div>
-          </li>
-
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 3">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <path class="i-card" d="M64 14h150l-34 32H30z"/>
-                <path class="i-card" d="M64 58h150l-34 32H30z"/>
-                <path class="i-card" d="M64 102h150l-34 32H30z"/>
-                <path class="i-hair" d="M74 34l52-10 54 6M126 24l14 14"/>
-                <path class="i-hair" d="M62 80l30-12 30 10 34-12 30 8M92 68l12 14M156 66l-8 16M122 78l-18 4M186 74l-14 10"/>
-                <path class="i-hair" d="M52 126l20-14 22 12 20-12 22 10 20-12 22 12 18-10M72 112l-6 16M114 112l8 16M158 110l-4 18M94 124l-12 6M136 122l10 8M178 122l-8 8"/>
-                <g class="f-ink">
-                  <circle cx="74" cy="34" r="3"/><circle cx="126" cy="24" r="3"/><circle cx="180" cy="30" r="3"/><circle cx="140" cy="38" r="3"/>
-                  <circle cx="62" cy="80" r="2.6"/><circle cx="92" cy="68" r="2.6"/><circle cx="122" cy="78" r="2.6"/><circle cx="156" cy="66" r="2.6"/><circle cx="186" cy="74" r="2.6"/><circle cx="104" cy="82" r="2.6"/><circle cx="148" cy="82" r="2.6"/><circle cx="172" cy="84" r="2.6"/>
-                  <circle cx="52" cy="126" r="2.2"/><circle cx="72" cy="112" r="2.2"/><circle cx="94" cy="124" r="2.2"/><circle cx="114" cy="112" r="2.2"/><circle cx="136" cy="122" r="2.2"/><circle cx="156" cy="110" r="2.2"/><circle cx="178" cy="122" r="2.2"/><circle cx="196" cy="112" r="2.2"/><circle cx="66" cy="128" r="2.2"/><circle cx="122" cy="128" r="2.2"/><circle cx="154" cy="128" r="2.2"/><circle cx="82" cy="130" r="2.2"/><circle cx="146" cy="130" r="2.2"/><circle cx="170" cy="130" r="2.2"/>
-                </g>
-                <path class="i-signal i-signal--dash" d="M140 38v44M148 82v40"/>
-                <circle class="i-ring" cx="140" cy="38" r="6"/>
-                <circle class="i-ring" cx="148" cy="82" r="6"/>
-                <circle class="i-ring i-ring--hit" cx="146" cy="130" r="6.5"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">4</p>
-              <h4 class="strip__title">Index</h4>
-              <p class="strip__text">The vectors live in PostgreSQL with pgvector, under an HNSW index.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <!-- The result -->
-      <div class="spread spread--hit">
-        <div class="panel hit" data-reveal="pop">
-          <svg class="hit__lines" data-focus viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true" focusable="false"></svg>
-          <span class="sfx sfx--don" lang="ja" aria-hidden="true">ドン！</span>
-          <p class="hit__figure">
-            <span class="hit__num">~98%</span>
-            <span class="caption caption--ink hit__cap">matching accuracy</span>
-          </p>
-        </div>
-
-        <div class="panel statement" data-reveal="wipe-right">
-          <p class="label label--signal">5 · Match</p>
-          <p class="statement__lead">A new face is matched against all of them in under a second.</p>
-          <p class="statement__text">I architected and scaled this pipeline at Plandaro. It processes thousands of event photos, and the background workers mean a bulk upload never holds up the API.</p>
-          <ul class="tags">
-            <li>InsightFace</li>
-            <li>PostgreSQL + pgvector</li>
-            <li>HNSW</li>
-            <li>Celery</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Interactive: the index itself -->
-      <section class="demo" data-index-demo aria-labelledby="demo-title">
-        <header class="demo__head">
-          <p class="label label--signal">Interactive, runs in your browser</p>
-          <h3 id="demo-title" class="demo__title">How the index finds a face without checking every one</h3>
-          <p class="demo__intro">Each dot is a face from a photo, and photos of the same person sit close together. Pick any spot to stand in for a new face. The search then has to find the five faces nearest to it.</p>
-        </header>
-
-        <p class="demo__nojs nojs-only">The live demo needs JavaScript. The three steps below describe what it shows.</p>
-
-        <div class="demo__body">
-          <div class="demo__stage js-only" data-stage>
-            <div class="panel tier" data-layer="2">
-              <p class="tier__tab"><b>Layer 2</b> <span data-layer-count="2"></span></p>
-            </div>
-            <div class="panel tier" data-layer="1">
-              <p class="tier__tab"><b>Layer 1</b> <span data-layer-count="1"></span></p>
-            </div>
-            <div class="panel tier" data-layer="0">
-              <p class="tier__tab"><b>Layer 0</b> <span data-layer-count="0"></span></p>
-            </div>
-            <canvas class="demo__canvas" role="img" aria-label="Three stacked panels, one per layer of the index. The top layer holds a few faces joined by long links, the bottom layer holds every face. A search starts at the top and works down."></canvas>
-          </div>
-
-          <aside class="demo__side">
-            <ol class="steps" data-steps>
-              <li data-step-for="2"><b>Layer 2.</b> Start at the top: few faces, long links. Hop to whichever neighbour is closest to the new face.</li>
-              <li data-step-for="1"><b>Layer 1.</b> Drop down a layer. More faces, shorter hops.</li>
-              <li data-step-for="0"><b>Layer 0.</b> Every face is here. Search the neighbourhood properly and keep the five closest.</li>
+        <div class="job__body">
+          <section class="notes" aria-labelledby="notes-title">
+            <h3 id="notes-title" class="label">What I did</h3>
+            <ol class="notes__list">
+              <li><b>Ingest.</b> Bulk uploads go straight onto a queue. Celery workers take it from there, so the API never blocks and requests never time out.</li>
+              <li><b>Compress.</b> Every photo is compressed in the background, automatically.</li>
+              <li><b>Embed.</b> InsightFace turns each face it finds into an embedding: a vector that lands close to other photos of the same person.</li>
+              <li><b>Index.</b> The vectors live in PostgreSQL with pgvector, under an HNSW index.</li>
+              <li><b>Match.</b> A new face is matched against all of them in under a second, with about 98% matching accuracy.</li>
             </ol>
+          </section>
 
-            <div class="tally js-only" aria-live="polite">
-              <p class="tally__line" data-result>Click or tap anywhere in the panels to search from that spot.</p>
-              <div class="bars" aria-hidden="true">
-                <div class="bar">
-                  <span class="bar__name">This search</span>
-                  <span class="bar__track"><span class="bar__fill" data-bar-hnsw></span></span>
-                  <span class="bar__val" data-count-hnsw>0</span>
-                </div>
-                <div class="bar">
-                  <span class="bar__name">Full scan</span>
-                  <span class="bar__track"><span class="bar__fill bar__fill--all" data-bar-all></span></span>
-                  <span class="bar__val" data-count-all>0</span>
-                </div>
-              </div>
-              <p class="tally__verify" data-verify></p>
-            </div>
-
-            <button type="button" class="btn js-only" data-drop>Search from a random spot</button>
-
-            <p class="fineprint">A toy version: <span data-n>560</span> points in two dimensions, indexed and searched in your browser. The production index holds high-dimensional face embeddings in pgvector. Same algorithm.</p>
-          </aside>
-        </div>
-      </section>
-
-      <!-- Closing spread -->
-      <div class="spread spread--close">
-        <div class="panel meanwhile" data-reveal="wipe-right">
-          <p class="meanwhile__jp" lang="ja" aria-hidden="true">一方その頃</p>
-          <h3 class="meanwhile__title">Meanwhile, in the rest of the stack</h3>
-          <p class="meanwhile__text">Plandaro is an event planning marketplace. Beyond the photo pipeline, I worked on its technical architecture across the stack.</p>
-          <ul class="stack">
-            <li><b>Backend</b><span>Go and PostgreSQL</span></li>
-            <li><b>Frontend</b><span>Next.js</span></li>
-            <li><b>Deploys</b><span>Multi-container Docker, automated with GitHub Actions</span></li>
-            <li><b>Product</b><span>Real-time messaging, push notifications, subscription billing</span></li>
-            <li><b>Search</b><span>Geo-location search on Meilisearch</span></li>
-          </ul>
+          <section class="parts" aria-labelledby="parts-title">
+            <h3 id="parts-title" class="label">Rest of the stack</h3>
+            <p class="parts__intro">I architected and scaled this pipeline at Plandaro, an event planning marketplace. Beyond the photo pipeline, I worked on its technical architecture across the stack.</p>
+            <table class="bom">
+              <thead>
+                <tr><th scope="col">Item</th><th scope="col">Part</th><th scope="col">Built with</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>01</td><th scope="row">Backend</th><td>Go and PostgreSQL</td></tr>
+                <tr><td>02</td><th scope="row">Frontend</th><td>Next.js</td></tr>
+                <tr><td>03</td><th scope="row">Deploys</th><td>Multi-container Docker, automated with GitHub Actions</td></tr>
+                <tr><td>04</td><th scope="row">Product</th><td>Real-time messaging, push notifications, subscription billing</td></tr>
+                <tr><td>05</td><th scope="row">Search</th><td>Geo-location search on Meilisearch</td></tr>
+              </tbody>
+            </table>
+          </section>
         </div>
 
-        <div class="panel panel--ink tsuzuku" data-reveal="wipe-down">
-          <p class="tsuzuku__jp" lang="ja" aria-hidden="true">つづく</p>
-          <p class="tsuzuku__en">To be continued</p>
-          <a class="tsuzuku__note" href="#ch-02">Next: Chapter 02, Government of Canada</a>
-        </div>
       </div>
     </article>
 
     <!-- ============================================================
-         CHAPTER 02 : GOVERNMENT OF CANADA
+         WORK 02 : GOVERNMENT OF CANADA
          ============================================================ -->
-    <article id="ch-02" class="chapter" data-title="02 Government of Canada" aria-labelledby="ch-02-title">
+    <article id="work-canada" class="band" aria-labelledby="canada-title">
+      <div class="band__inner job">
 
-      <div class="spread spread--open">
-
-        <header class="panel panel--ink titlecard" data-reveal="wipe-down">
-          <p class="titlecard__kicker">
-            <span>Chapter 02 / Government of Canada</span>
-            <span lang="ja" aria-hidden="true" class="titlecard__jp">第二話</span>
-          </p>
-          <p class="titlecard__num" aria-hidden="true">02</p>
-          <h2 id="ch-02-title" class="titlecard__title">The Estimator</h2>
-          <dl class="titlecard__meta">
-            <div><dt>Employer</dt><dd>Government of Canada</dd></div>
+        <header class="job__head">
+          <div class="job__title">
+            <p class="kicker"><span>Work</span><span>02 of 03</span></p>
+            <h2 id="canada-title" class="job__name job__name--long">Government of Canada</h2>
+            <p class="job__hook">A model that estimates taxable automobile benefits, built for the Canada Revenue Agency.</p>
+          </div>
+          <dl class="spec">
             <div><dt>Role</dt><dd>Software Engineer</dd></div>
             <div><dt>When</dt><dd>December 2022 to December 2025</dd></div>
             <div><dt>Where</dt><dd>Ottawa, Canada</dd></div>
           </dl>
         </header>
 
-        <div class="panel scene" data-reveal="wipe-right">
-          <svg class="scene__svg" viewBox="0 0 900 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-            <!-- speed lines -->
-            <path class="i-line" d="M-400 300H96M-400 352H54M-400 396H120"/>
-            <path class="i-hair" d="M-400 276H150M-400 326H132M-400 374H88M-400 414H140M-400 248H30"/>
-            <!-- road -->
-            <rect x="-600" y="434" width="2100" height="14" fill="url(#tone-dark)"/>
-            <path class="i-line" d="M-600 432H1500"/>
-            <path class="i-hair" d="M-600 478H-470M-400 478H-270M-200 478H-70M0 478H130M200 478H330M400 478H530M600 478H730M800 478H930M1000 478H1130M1200 478H1330"/>
-            <!-- the car -->
-            <path class="i-card scene__thick" d="M170 430L160 360Q165 330 200 325L300 318L370 250Q380 240 400 240H560Q590 240 610 262L680 322L770 338Q800 345 805 375L810 430Z"/>
-            <path d="M312 318L376 256H470V318Z" fill="url(#tone-mid)"/>
-            <path d="M486 256H560L600 270L662 318H486Z" fill="url(#tone-light)"/>
-            <path class="i-line" d="M312 318L376 256H470V318ZM486 256H560L600 270L662 318H486Z"/>
-            <path class="i-hair" d="M478 250V420M300 340H660M500 348h34"/>
-            <ellipse class="i-card" cx="790" cy="372" rx="9" ry="14"/>
-            <path class="i-card scene__thick" d="M232 432A58 58 0 0 1 348 432ZM632 432A58 58 0 0 1 748 432Z"/>
-            <circle class="f-ink" cx="290" cy="432" r="48"/>
-            <circle class="f-paper" cx="290" cy="432" r="22"/>
-            <circle class="f-ink" cx="290" cy="432" r="7"/>
-            <circle class="f-ink" cx="690" cy="432" r="48"/>
-            <circle class="f-paper" cx="690" cy="432" r="22"/>
-            <circle class="f-ink" cx="690" cy="432" r="7"/>
-            <!-- the pencil note: what is this worth? -->
-            <path class="i-pencil" d="M160 196V236M810 196V236M160 206H810"/>
-            <text class="scene__note" x="485" y="182" text-anchor="middle">TAXABLE BENEFIT = ?</text>
-          </svg>
-          <p class="caption scene__c1">A car that comes with the job.</p>
-          <p class="caption scene__c2">Part of its value counts as income.</p>
-          <p class="caption caption--ink scene__c3">How much? That is the estimate.</p>
-        </div>
-      </div>
+        <div class="job__body">
+          <section class="notes" aria-labelledby="canada-notes">
+            <h3 id="canada-notes" class="label">What I did</h3>
+            <ol class="notes__list">
+              <li><b>Estimate.</b> The Automobile Benefits Online Calculator, built for the Canada Revenue Agency. A supervised learning model in Python estimates taxable automobile benefits for employees and shareholders.</li>
+              <li><b>Serve.</b> The Python backend is exposed as APIs through IBM API Connect, and the application is deployed on AWS.</li>
+              <li><b>Ship.</b> I implemented and managed automated CI/CD pipelines and Linux-based infrastructure, and built an automated Angular build pipeline so that builds and deployments are consistent across development and production.</li>
+              <li><b>Assist.</b> A proof of concept for a code assistant running on an isolated, secure large language model, purpose-built for software development at the agency.</li>
+            </ol>
+          </section>
 
-      <section class="pipeline" aria-labelledby="ch-02-work">
-        <h3 id="ch-02-work" class="label label--rule">Three pieces of work</h3>
-
-        <ol class="strip strip--three">
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 0">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <path class="i-line" d="M30 14V126H226"/>
-                <g class="f-ink">
-                  <circle cx="52" cy="108" r="3"/><circle cx="66" cy="98" r="3"/><circle cx="78" cy="106" r="3"/><circle cx="92" cy="88" r="3"/>
-                  <circle cx="104" cy="94" r="3"/><circle cx="118" cy="76" r="3"/><circle cx="132" cy="82" r="3"/><circle cx="146" cy="62" r="3"/>
-                  <circle cx="160" cy="68" r="3"/><circle cx="184" cy="42" r="3"/><circle cx="196" cy="50" r="3"/><circle cx="210" cy="32" r="3"/>
-                </g>
-                <path class="i-signal" d="M40 114L218 30"/>
-                <path class="i-pencil" d="M170 126V53H30"/>
-                <circle class="i-ring i-ring--hit" cx="170" cy="53" r="6.5"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">1</p>
-              <h4 class="strip__title">Estimate</h4>
-              <p class="strip__text">The Automobile Benefits Online Calculator, built for the Canada Revenue Agency. A supervised learning model in Python estimates taxable automobile benefits for employees and shareholders.</p>
-            </div>
-          </li>
-
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 1">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <path class="i-line" d="M58 62H70M114 62H126M170 62H182"/>
-                <rect class="i-card" x="14" y="40" width="44" height="44"/>
-                <rect class="i-card" x="70" y="40" width="44" height="44"/>
-                <rect class="i-card" x="126" y="40" width="44" height="44"/>
-                <rect class="i-card" x="182" y="40" width="44" height="44"/>
-                <path class="i-line" d="M28 72V52M28 62H44V52"/>
-                <circle class="f-ink" cx="28" cy="52" r="3.5"/><circle class="f-ink" cx="28" cy="72" r="3.5"/><circle class="f-ink" cx="44" cy="52" r="3.5"/>
-                <rect x="80" y="50" width="24" height="24" fill="url(#tone-dark)"/>
-                <path class="i-line" d="M138 62L146 70L160 54"/>
-                <path class="i-line" d="M204 74V52M196 60L204 51L212 60"/>
-                <path class="i-hair" d="M14 112H226"/>
-                <path class="i-hair" d="M36 106V118M92 106V118M148 106V118M204 106V118"/>
-                <circle class="i-signal-dot illo-token" cx="36" cy="112" r="6"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">2</p>
-              <h4 class="strip__title">Ship</h4>
-              <p class="strip__text">I implemented and managed CI/CD pipelines and deployment strategies to streamline application development.</p>
-            </div>
-          </li>
-
-          <li class="panel strip__cell" data-reveal="pop" style="--i: 2">
-            <div class="strip__inner">
-              <svg class="illo" viewBox="0 0 240 150" aria-hidden="true" focusable="false">
-                <path class="i-pencil" d="M14 86q-10-2-8-12q2-9 12-8q4-12 16-8q10 3 9 12q8 2 7 9q-1 7-9 7Z"/>
-                <path class="i-pencil" d="M50 76H82"/>
-                <path class="i-cut" d="M60 68L72 84M72 68L60 84"/>
-                <rect class="i-card scene__thick" x="84" y="20" width="142" height="112"/>
-                <rect x="90" y="26" width="130" height="100" fill="url(#tone-light)"/>
-                <rect class="i-card" x="100" y="36" width="110" height="80"/>
-                <path class="i-line" d="M138 60L122 76L138 92M172 60L188 76L172 92M162 54L148 98"/>
-                <rect class="f-ink" x="198" y="8" width="26" height="20"/>
-                <path class="i-line" d="M204 8V2a7 7 0 0 1 14 0V8"/>
-              </svg>
-              <p class="strip__n" aria-hidden="true">3</p>
-              <h4 class="strip__title">Assist</h4>
-              <p class="strip__text">A proof of concept for a code assistant running on an isolated, secure large language model, purpose-built for software development at the agency.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <div class="spread spread--close">
-        <div class="panel statement" data-reveal="wipe-right">
-          <p class="label label--signal">The proof of concept</p>
-          <p class="statement__lead">Could a code assistant run on a language model the agency keeps entirely to itself?</p>
-          <p class="statement__text">That was the question. My proof of concept determined whether an assistant built on an isolated and secure LLM was feasible for software development at the CRA.</p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>Supervised learning</li>
-            <li>CI/CD</li>
-            <li>LLM</li>
-          </ul>
+          <section class="parts" aria-labelledby="canada-poc">
+            <h3 id="canada-poc" class="label">The proof of concept</h3>
+            <p class="parts__lead">Could a code assistant run on a language model the agency keeps entirely to itself?</p>
+            <p class="parts__intro">That was the question. My proof of concept determined whether an assistant built on an isolated and secure LLM was feasible for software development at the CRA.</p>
+            <table class="bom">
+              <thead>
+                <tr><th scope="col">Item</th><th scope="col">Part</th><th scope="col">Built with</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>01</td><th scope="row">Model</th><td>Supervised learning, in Python</td></tr>
+                <tr><td>02</td><th scope="row">API</th><td>IBM API Connect</td></tr>
+                <tr><td>03</td><th scope="row">Hosting</th><td>AWS</td></tr>
+                <tr><td>04</td><th scope="row">Delivery</th><td>CI/CD pipelines, Linux, an Angular build pipeline</td></tr>
+                <tr><td>05</td><th scope="row">Research</th><td>A code assistant on an isolated LLM</td></tr>
+              </tbody>
+            </table>
+          </section>
         </div>
 
-        <div class="panel panel--ink tsuzuku" data-reveal="wipe-down">
-          <p class="tsuzuku__jp" lang="ja" aria-hidden="true">つづく</p>
-          <p class="tsuzuku__en">To be continued</p>
-          <a class="tsuzuku__note" href="#ch-03">Next: Chapter 03, OpenBet</a>
-        </div>
       </div>
     </article>
 
     <!-- ============================================================
-         CHAPTER 03 : OPENBET
+         WORK 03 : OPENBET
          ============================================================ -->
-    <article id="ch-03" class="chapter" data-title="03 OpenBet" aria-labelledby="ch-03-title">
+    <article id="work-openbet" class="band band--light" aria-labelledby="openbet-title">
+      <div class="band__inner job">
 
-      <div class="spread spread--open">
-
-        <header class="panel panel--ink titlecard" data-reveal="wipe-down">
-          <p class="titlecard__kicker">
-            <span>Chapter 03 / OpenBet</span>
-            <span lang="ja" aria-hidden="true" class="titlecard__jp">第三話</span>
-          </p>
-          <p class="titlecard__num" aria-hidden="true">03</p>
-          <h2 id="ch-03-title" class="titlecard__title">Keys to the House</h2>
-          <dl class="titlecard__meta">
-            <div><dt>Employer</dt><dd>OpenBet</dd></div>
+        <header class="job__head">
+          <div class="job__title">
+            <p class="kicker"><span>Work</span><span>03 of 03</span></p>
+            <h2 id="openbet-title" class="job__name">OpenBet</h2>
+            <p class="job__hook">Clearing out SSH keys automatically when people leave.</p>
+          </div>
+          <dl class="spec">
             <div><dt>Role</dt><dd>DevOps Engineer</dd></div>
             <div><dt>When</dt><dd>September 2021 to December 2022</dd></div>
             <div><dt>Where</dt><dd>Las Vegas, USA</dd></div>
           </dl>
         </header>
 
-        <div class="panel scene" data-reveal="wipe-right">
-          <svg class="scene__svg" viewBox="0 -70 900 630" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-            <defs>
-              <!-- one key: bow, shaft and teeth. Drawn in whatever colour it is given. -->
-              <symbol id="key" viewBox="0 0 40 96" overflow="visible">
-                <path d="M20 0V10" fill="none" stroke="currentColor" stroke-width="3"/>
-                <circle cx="20" cy="26" r="14" fill="var(--paper)" stroke="currentColor" stroke-width="6"/>
-                <path d="M20 40V90M20 66H32M20 80H30" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="square"/>
-              </symbol>
-            </defs>
-            <!-- floor -->
-            <rect x="-600" y="476" width="2100" height="14" fill="url(#tone-dark)"/>
-            <path class="i-line" d="M-600 474H1500"/>
-            <!-- the rail the keys hang from -->
-            <path class="i-line" d="M-600 60H1500"/>
-            <!-- three servers -->
-            <g>
-              <rect class="i-card scene__thick" x="110" y="196" width="190" height="278"/>
-              <rect class="i-card" x="126" y="212" width="158" height="40"/><rect class="i-card" x="126" y="264" width="158" height="40"/>
-              <rect class="i-card" x="126" y="316" width="158" height="40"/><rect class="i-card" x="126" y="368" width="158" height="40"/>
-              <rect x="134" y="220" width="70" height="24" fill="url(#tone-dark)"/><rect x="134" y="272" width="70" height="24" fill="url(#tone-mid)"/>
-              <rect x="134" y="324" width="70" height="24" fill="url(#tone-dark)"/><rect x="134" y="376" width="70" height="24" fill="url(#tone-light)"/>
-              <g class="f-ink"><circle cx="262" cy="232" r="5"/><circle cx="262" cy="284" r="5"/><circle cx="262" cy="336" r="5"/><circle cx="262" cy="388" r="5"/><circle cx="244" cy="232" r="5"/><circle cx="244" cy="336" r="5"/></g>
-              <text class="scene__note scene__note--ink" x="205" y="446" text-anchor="middle">WEB-01</text>
-            </g>
-            <g transform="translate(245 0)">
-              <rect class="i-card scene__thick" x="110" y="196" width="190" height="278"/>
-              <rect class="i-card" x="126" y="212" width="158" height="40"/><rect class="i-card" x="126" y="264" width="158" height="40"/>
-              <rect class="i-card" x="126" y="316" width="158" height="40"/><rect class="i-card" x="126" y="368" width="158" height="40"/>
-              <rect x="134" y="220" width="70" height="24" fill="url(#tone-mid)"/><rect x="134" y="272" width="70" height="24" fill="url(#tone-dark)"/>
-              <rect x="134" y="324" width="70" height="24" fill="url(#tone-light)"/><rect x="134" y="376" width="70" height="24" fill="url(#tone-dark)"/>
-              <g class="f-ink"><circle cx="262" cy="232" r="5"/><circle cx="262" cy="284" r="5"/><circle cx="262" cy="336" r="5"/><circle cx="262" cy="388" r="5"/><circle cx="244" cy="284" r="5"/><circle cx="244" cy="388" r="5"/></g>
-              <text class="scene__note scene__note--ink" x="205" y="446" text-anchor="middle">API-01</text>
-            </g>
-            <g transform="translate(490 0)">
-              <rect class="i-card scene__thick" x="110" y="196" width="190" height="278"/>
-              <rect class="i-card" x="126" y="212" width="158" height="40"/><rect class="i-card" x="126" y="264" width="158" height="40"/>
-              <rect class="i-card" x="126" y="316" width="158" height="40"/><rect class="i-card" x="126" y="368" width="158" height="40"/>
-              <rect x="134" y="220" width="70" height="24" fill="url(#tone-dark)"/><rect x="134" y="272" width="70" height="24" fill="url(#tone-light)"/>
-              <rect x="134" y="324" width="70" height="24" fill="url(#tone-mid)"/><rect x="134" y="376" width="70" height="24" fill="url(#tone-dark)"/>
-              <g class="f-ink"><circle cx="262" cy="232" r="5"/><circle cx="262" cy="284" r="5"/><circle cx="262" cy="336" r="5"/><circle cx="262" cy="388" r="5"/><circle cx="244" cy="232" r="5"/><circle cx="244" cy="284" r="5"/></g>
-              <text class="scene__note scene__note--ink" x="205" y="446" text-anchor="middle">DB-01</text>
-            </g>
-            <!-- the keys each server accepts. The red ones belong to someone who has left. -->
-            <g class="scene__keys">
-              <use href="#key" x="124" y="60" width="40" height="96"/><use href="#key" x="170" y="60" width="40" height="96"/>
-              <use class="is-left" href="#key" x="216" y="60" width="40" height="96"/><use href="#key" x="262" y="60" width="40" height="96"/>
-              <use href="#key" x="369" y="60" width="40" height="96"/><use href="#key" x="415" y="60" width="40" height="96"/>
-              <use class="is-left" href="#key" x="461" y="60" width="40" height="96"/><use href="#key" x="507" y="60" width="40" height="96"/>
-              <use href="#key" x="637" y="60" width="40" height="96"/><use href="#key" x="683" y="60" width="40" height="96"/><use href="#key" x="729" y="60" width="40" height="96"/>
-            </g>
-          </svg>
-          <span class="sfx sfx--kacha" lang="ja" aria-hidden="true">カチャ</span>
-          <p class="caption scene__c1">Every server keeps a list of keys.</p>
-          <p class="caption scene__c2">Every key belongs to a person.</p>
-          <p class="caption caption--ink scene__c3">People leave. Their keys do not.</p>
-        </div>
-      </div>
+        <div class="job__body">
+          <section class="notes" aria-labelledby="openbet-notes">
+            <h3 id="openbet-notes" class="label">What I did</h3>
+            <ol class="notes__list">
+              <li><b>Schedule.</b> Jenkins runs the audit regularly, with nobody pressing a button.</li>
+              <li><b>Compare.</b> Every key on every server is checked against the LDAP staff directory.</li>
+              <li><b>Remove.</b> Keys whose owner has left are removed automatically.</li>
+              <li><b>Report.</b> A report goes out by email. I designed and built this system, so nobody had to do the audit by hand.</li>
+            </ol>
+          </section>
 
-      <!-- Interactive: the audit, in miniature -->
-      <section class="demo audit" data-audit-demo aria-labelledby="audit-title">
-        <header class="demo__head">
-          <p class="label label--signal">Interactive, runs in your browser</p>
-          <h3 id="audit-title" class="demo__title">How a departed colleague's key gets found and removed</h3>
-          <p class="demo__intro">I designed and built an automated system that did this audit, so nobody had to do it by hand. Here it is in miniature. Click a name to have that person leave, then run the audit.</p>
-        </header>
-
-        <p class="demo__nojs nojs-only">The live demo needs JavaScript. In short: the audit compares every key on every server with the staff directory, removes keys whose owner has left, and emails a report.</p>
-
-        <div class="audit__body js-only">
-          <div class="panel audit__col">
-            <p class="tier__tab"><b>Directory</b> <span>who works here</span></p>
-            <ul class="audit__people" data-people></ul>
-          </div>
-          <div class="audit__servers" data-servers></div>
-          <div class="panel audit__col audit__mail">
-            <p class="tier__tab"><b>Report</b> <span>sent by email</span></p>
-            <div class="audit__report" data-report aria-live="polite"></div>
-          </div>
+          <section class="parts" aria-labelledby="openbet-daily">
+            <h3 id="openbet-daily" class="label">Day to day</h3>
+            <p class="parts__intro">OpenBet builds sports betting software. I worked with Agile teams to support how that software was developed and deployed.</p>
+            <table class="bom">
+              <thead>
+                <tr><th scope="col">Item</th><th scope="col">Part</th><th scope="col">What it was</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>01</td><th scope="row">CI/CD</th><td>Pipelines on Jenkins and Git</td></tr>
+                <tr><td>02</td><th scope="row">Automation</th><td>Scripts to streamline operations and make systems more reliable</td></tr>
+                <tr><td>03</td><th scope="row">Access</th><td>The SSH key compliance system: Python, Jenkins, LDAP and SMTP</td></tr>
+                <tr><td>04</td><th scope="row">Releases</th><td>Monthly Build Release Engineer: production release cycles, environment cutovers, zero-downtime deployments</td></tr>
+              </tbody>
+            </table>
+          </section>
         </div>
 
-        <div class="audit__actions js-only">
-          <button type="button" class="btn btn--primary" data-run>Run the audit</button>
-          <button type="button" class="btn" data-reset>Start over</button>
-        </div>
-
-        <p class="fineprint">A toy version with made-up names. The real system was built with Python, Jenkins, LDAP and SMTP. It checked the LDAP directory against server configurations regularly, with nobody pressing a button.</p>
-      </section>
-
-      <div class="spread spread--close">
-        <div class="panel meanwhile" data-reveal="wipe-right">
-          <p class="meanwhile__jp" lang="ja" aria-hidden="true">一方その頃</p>
-          <h3 class="meanwhile__title">Meanwhile, day to day</h3>
-          <p class="meanwhile__text">OpenBet builds sports betting software. I worked with Agile teams to support how that software was developed and deployed.</p>
-          <ul class="stack">
-            <li><b>CI/CD</b><span>Pipelines on Jenkins and Git</span></li>
-            <li><b>Automation</b><span>Scripts to streamline operations and make systems more reliable</span></li>
-            <li><b>Access</b><span>The SSH key compliance system: Python, Jenkins, LDAP and SMTP</span></li>
-          </ul>
-        </div>
-
-        <div class="panel panel--ink tsuzuku" data-reveal="wipe-down">
-          <p class="tsuzuku__jp" lang="ja" aria-hidden="true">つづく</p>
-          <p class="tsuzuku__en">To be continued</p>
-          <a class="tsuzuku__note" href="#skills">Next: Skills and Education</a>
-        </div>
       </div>
     </article>
 
     <!-- ============================================================
-         CHAPTER 04 : SKILLS AND EDUCATION
+         SKILLS AND EDUCATION
          ============================================================ -->
-    <section id="skills" class="contents skills" data-title="04 Skills and Education" aria-labelledby="skills-title">
+    <section id="skills" class="band" aria-labelledby="skills-title">
+      <div class="band__inner">
 
-      <div class="panel panel--ink contents__card" data-reveal="wipe-down">
-        <p class="contents__jp" lang="ja" aria-hidden="true">資料</p>
-        <h2 id="skills-title" class="contents__title">Skills and Education</h2>
-        <p class="contents__note">Chapter 04. The skills listed on my résumé, grouped by kind.</p>
-      </div>
+        <header class="job__head">
+          <div class="job__title">
+            <p class="kicker"><span>Skills and education</span></p>
+            <h2 id="skills-title" class="job__name job__name--long">Skills</h2>
+            <p class="job__hook">The skills listed on my résumé, grouped by kind.</p>
+          </div>
+        </header>
 
-      <div class="skills__body">
-        <dl class="skillset">
-          <div data-reveal="wipe-right" style="--i: 0">
-            <dt>Languages</dt>
-            <dd><ul class="tags"><li>Python</li><li>Go</li><li>JavaScript</li></ul></dd>
-          </div>
-          <div data-reveal="wipe-right" style="--i: 1">
-            <dt>Machine learning</dt>
-            <dd><ul class="tags"><li>Machine Learning</li><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li></ul></dd>
-          </div>
-          <div data-reveal="wipe-right" style="--i: 2">
-            <dt>Backend and data</dt>
-            <dd><ul class="tags"><li>REST APIs</li><li>Postgres</li><li>Redis</li></ul></dd>
-          </div>
-          <div data-reveal="wipe-right" style="--i: 3">
-            <dt>Frontend</dt>
-            <dd><ul class="tags"><li>React.js</li><li>Web Development</li></ul></dd>
-          </div>
-          <div data-reveal="wipe-right" style="--i: 4">
-            <dt>DevOps and cloud</dt>
-            <dd><ul class="tags"><li>DevOps</li><li>CI/CD</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Infrastructure as Code (IaC)</li><li>Microsoft Azure</li><li>Linux/Unix</li><li>Git</li></ul></dd>
-          </div>
-          <div data-reveal="wipe-right" style="--i: 5">
-            <dt>Practice and tools</dt>
-            <dd><ul class="tags"><li>TDD</li><li>Scrum</li><li>Jira</li><li>Confluence</li><li>PostHog</li></ul></dd>
-          </div>
-        </dl>
+        <div class="job__body">
+          <dl class="skillset">
+            <div><dt>Languages</dt><dd><ul class="tags"><li>Python</li><li>Go</li><li>JavaScript</li></ul></dd></div>
+            <div><dt>Machine learning</dt><dd><ul class="tags"><li>Machine Learning</li><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li></ul></dd></div>
+            <div><dt>Backend and data</dt><dd><ul class="tags"><li>REST APIs</li><li>Postgres</li><li>Redis</li></ul></dd></div>
+            <div><dt>Frontend</dt><dd><ul class="tags"><li>React.js</li><li>Web Development</li></ul></dd></div>
+            <div><dt>DevOps and cloud</dt><dd><ul class="tags"><li>DevOps</li><li>CI/CD</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Infrastructure as Code (IaC)</li><li>Microsoft Azure</li><li>Linux/Unix</li><li>Git</li></ul></dd></div>
+            <div><dt>Practice and tools</dt><dd><ul class="tags"><li>TDD</li><li>Scrum</li><li>Jira</li><li>Confluence</li><li>PostHog</li></ul></dd></div>
+          </dl>
 
-        <div class="schools">
-          <div class="panel school" data-reveal="pop" style="--i: 0">
-            <p class="label label--signal">Degree</p>
-            <h3 class="school__name">Ontario Tech University</h3>
-            <p class="school__what">Bachelor's, Software Engineering</p>
-            <p class="school__when">September 2016 to May 2021</p>
-          </div>
-          <div class="panel school" data-reveal="pop" style="--i: 1">
-            <p class="label label--signal">Certification</p>
-            <h3 class="school__name">Stanford University</h3>
-            <p class="school__what">Machine Learning Specialization</p>
-            <p class="school__when">November 2025 to January 2026</p>
-          </div>
+          <section class="schools" aria-labelledby="schools-title">
+            <h3 id="schools-title" class="label">Education</h3>
+            <div class="school">
+              <p class="school__kind">Degree</p>
+              <h4 class="school__name">Ontario Tech University</h4>
+              <p class="school__what">Bachelor's, Software Engineering</p>
+              <p class="school__when">September 2016 to May 2021</p>
+            </div>
+            <div class="school">
+              <p class="school__kind">Certification</p>
+              <h4 class="school__name">Stanford University</h4>
+              <p class="school__what">Machine Learning Specialization</p>
+              <p class="school__when">November 2025 to January 2026</p>
+            </div>
+          </section>
         </div>
+
       </div>
     </section>
 
     <!-- ============================================================
-         CONTACT (the colophon: the page at the back of the book)
+         CONTACT
          ============================================================ -->
-    <section id="colophon" class="colophon" data-title="Contact" aria-labelledby="colophon-title">
-      <div class="colophon__head">
-        <p class="colophon__jp" lang="ja" aria-hidden="true">奥付</p>
-        <h2 id="colophon-title" class="colophon__title">Contact</h2>
-        <span class="seal" lang="ja" aria-hidden="true">四一六</span>
+    <section id="contact" class="band band--light" aria-labelledby="contact-title">
+      <div class="band__inner contact">
+
+        <div class="contact__call">
+          <p class="kicker"><span>Contact</span></p>
+          <h2 id="contact-title" class="contact__lead">Hiring a software engineer? I would like to hear about it.</h2>
+          <p class="contact__how">ML, AI, DevOps, solutions architecture or general software engineering. The quickest way to reach me is a message on LinkedIn.</p>
+          <ul class="links">
+            <li><a class="btn btn--solid" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé (PDF)</a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/laxsanj/" rel="me">LinkedIn</a></li>
+            <li><a class="btn" href="https://github.com/416LJ/" rel="me">GitHub</a></li>
+          </ul>
+        </div>
+
+        <dl class="imprint">
+          <div><dt>Made with</dt><dd>Plain HTML, CSS and JavaScript. No framework, no build step, no tracking.</dd></div>
+          <div><dt>Face detection</dt><dd>BlazeFace, run with MediaPipe, both by Google. Loaded only if you give the cover a photo. Sample photo: Eileen Collins, NASA, public domain.</dd></div>
+          <div><dt>Globe</dt><dd>Earth by day and by night: NASA Blue Marble and Black Marble, public domain. Coastlines: Natural Earth.</dd></div>
+          <div><dt>Type</dt><dd>Archivo, IBM Plex Sans, IBM Plex Mono</dd></div>
+        </dl>
+
       </div>
-
-      <div class="panel colophon__call" data-reveal="wipe-right">
-        <p class="colophon__lead">Hiring a software engineer? I would like to hear about it.</p>
-        <p class="colophon__how">ML, AI, DevOps, solutions architecture or general software engineering. The quickest way to reach me is a message on LinkedIn.</p>
-        <ul class="colophon__links">
-          <li><a class="btn btn--primary" href="https://www.dropbox.com/scl/fi/86ug04m0ed6gu4z4wr5hu/Laxsan_Jeya_resume.pdf?rlkey=f1v7849ju77z8sol8rfekumux&amp;st=dfz70od3&amp;dl=1">Résumé (PDF)</a></li>
-          <li><a class="btn" href="https://www.linkedin.com/in/laxsanj/" rel="me">LinkedIn</a></li>
-          <li><a class="btn" href="https://github.com/416LJ/" rel="me">GitHub</a></li>
-        </ul>
-      </div>
-
-      <dl class="imprint">
-        <div><dt>Author</dt><dd>Laxsan Jeya, software engineer, Toronto</dd></div>
-        <div><dt>Edition</dt><dd>Volume 01, first edition, 2026</dd></div>
-        <div><dt>Type</dt><dd>Noto Serif Display, M PLUS 1, Shippori Mincho B1</dd></div>
-        <div><dt>Made with</dt><dd>Plain HTML, CSS and JavaScript. No framework, no build step, no tracking.</dd></div>
-        <div><dt>Face detection</dt><dd>BlazeFace, run with MediaPipe, both by Google. Loaded only if you give the cover a photo. Sample photo: Eileen Collins, NASA, public domain.</dd></div>
-        <div><dt>Demos</dt><dd>The index search and the key audit are written for this site. Everything runs in your browser.</dd></div>
-      </dl>
-
-      <p class="colophon__copy">© 2026 Laxsan Jeya</p>
     </section>
 
   </main>
 
-  <script defer src="js/hnsw.js?v=1"></script>
-  <script defer src="js/main.js?v=4"></script>
-  <script defer src="js/portrait-data.js?v=3"></script>
-  <script defer src="js/face-finder.js?v=2"></script>
-  <script defer src="js/cover-art.js?v=5"></script>
-  <script defer src="js/index-demo.js?v=1"></script>
-  <script defer src="js/audit-demo.js?v=1"></script>
+  <footer class="foot">
+    <p>© 2026 Laxsan Jeya</p>
+  </footer>
+
+  <script src="js/face-finder.js?v=2"></script>
+  <script src="js/portrait-photo.js?v=2"></script>
+  <script src="js/globe-data.js?v=1"></script>
+  <script src="js/main.js?v=5"></script>
+  <script src="js/globe.js?v=1"></script>
 </body>
 </html>
